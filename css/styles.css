@@ -55,10 +55,10 @@ header{
    text-shadow:0 0 10px rgba(0,0,0,0.8);
 
 }
-.animated:hover{
+.btn.animated:hover{
     animation:pulse 1s;
-    text-shadow: 0px 0px 30px black;
-    transition:text-shadow .5s;
+    text-shadow: 0px 0px 20px black;
+    transition:text-shadow .5s ease-out;
 }
 nav{
     padding-right: 34px;
@@ -93,18 +93,6 @@ footer{
     width: 60%;
     margin:auto 20%;
 }
-.shadowani{
-    background-color: black;
-    width:840;
-    height:440;
-    margin:10px 150px;
-}
-.shadowani:hover{
-
-    box-shadow:0 0 30px midnightblue;
-    transition:box-shadow .2s;
-    
-}
 .lis li{
     display: inline-block;
     list-style-type:none;
@@ -117,4 +105,20 @@ footer{
 .lis{
     padding: 0%;
     margin:10px 10px;
+}
+.img{
+    box-shadow: 4px 4px 8px -2px rgb(15, 15, 15),
+    5px 5px 12px rgba(255, 255, 255, 0.7) inset;
+    margin:15px;
+    cursor: pointer;
+}
+.lisimg li{
+    display: inline-block;
+}
+.lisimg{
+    padding:0;
+    margin:20px;
+}
+.animated.img:hover{
+    animation:pulse 0.5s;
 }

@@ -141,3 +141,24 @@ footer{
 .animated.img:hover{
     animation:pulse 0.5s;
 }
+@media handheld{
+    .lisimg img{
+        width: 192;
+        height: 108;
+    }
+}
+
+
+
+
+/*@media指定
+ all	指定できるメディアのすべて
+aural	音声出力
+braille	点字ディスプレイなどの点字出力
+embossed	点字プリンタ
+handheld	携帯用機器
+print	プリンタ（印刷用）
+projection	プロジェクタ
+screen	パソコン画面
+tty	文字幅が固定された機器
+tv	テレビ */

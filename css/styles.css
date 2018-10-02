@@ -143,8 +143,8 @@ footer{
 }
 @media handheld{
     .lisimg img{
-        width: 192;
-        height: 108;
+        width: 192px;
+        height: 108px;
     }
 }
 

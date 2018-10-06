@@ -6,6 +6,9 @@ body{
     height: 100%;
     margin:0;
     display: block;
+
+    /* スマホの文字サイズ自動調節オフ */
+    -webkit-text-size-adjust: none;
 }
 .wrap{
     width: 980px;
@@ -131,24 +134,39 @@ footer{
 }
 .lis{
     padding: 0%;
-    margin:10px 10px;
+    margin:10px;
 }
 .clearfix{
     overflow: hidden;
 }
 .gameimg{
-    background-color: rgba(0,0,0,0.4);
+    background:url(../img/gravel.png);
     margin: 10px 60px;
     overflow: hidden;
     min-width: 525px;
+    border: solid 2px white;
+    border-radius: 2%;
 }
+
+.fusen{
+    background:url(../img/tape-s08.png);
+    position: absolute;
+    width:40%;
+    height:30%;
+    top:-25px;
+    left:50px;
+    z-index:10;
+    background-repeat: none;
+}
+
 .gameimg img{
     width: 100%;
     height: auto;
     cursor: pointer;
     display: block;
+    position: relative;
+    alt:"画像";
 }
-
 
 .gameimg ul{
     padding:0;
@@ -156,11 +174,11 @@ footer{
     height: auto;
     position: relative;
     min-height: 1px;
-    padding-top:40px;
+    padding:40px 0;
 }
 
 .gameimg li{
-    margin:10px;
+    margin:15px;
     float: left;
     list-style: none;
     width: 27%;
@@ -175,12 +193,13 @@ footer{
 .animated.img:hover{
     animation:pulse 0.5s;
 }
-@media screen and (max-width:600px){
+
+/* @media screen and (max-width:600px){
     .lisimg img{
         width: 192px;
         height: 108px;
     }
-}
+} */
 
 
 

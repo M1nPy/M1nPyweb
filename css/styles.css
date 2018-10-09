@@ -10,6 +10,10 @@ body{
     /* スマホの文字サイズ自動調節オフ */
     -webkit-text-size-adjust: none;
 }
+
+
+/* header */
+
 .wrap{
     width: 980px;
     margin:40px auto;
@@ -47,8 +51,9 @@ header{
     text-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
+/* nav */
 
-a.btn{
+a.menubtn{
     width: 250px;
     color:midnightblue;
     text-align: center;
@@ -63,7 +68,7 @@ a.btn{
     margin:auto 3px;
     position: relative;
 }
-.btn::after {
+.menubtn::after {
     position: absolute;
     bottom: -13px;
     left: 0;
@@ -75,20 +80,14 @@ a.btn{
     transform-origin: left top;
     transition: transform .4s;
   }
-  .btn:hover::after {
+  .menubtn:hover::after {
     transform: scale(1, 1);
   }
-/* a.btn.animated:hover{
+/* a.menubtn.animated:hover{
     animation:pulse 1s;
     text-shadow: 0px 0px 20px black;
     
 } */
-.pad{
-    padding-top:65px;
-    border-bottom: 1px solid #eee;
-    width: 60%;
-    margin:auto 20%;
-}
 nav{
     padding-right: 34px;
     position: -webkit-sticky;
@@ -106,6 +105,9 @@ nav{
     margin:10px auto;
     padding:0;
 }
+
+/* maintext */
+
 .mainstr{
     background-color:white;
     box-shadow: 0 0 10px rgb(151, 151, 151);
@@ -114,31 +116,24 @@ nav{
     text-align: center;
     padding-bottom: 100px;
 }
+
+/* profile */
+
 .prof{
     margin:30px;
+    margin-bottom: 0;
 }
 
-footer{
-    text-align: center;
-    font-size:22px;
+.pad{
+    padding-top:65px;
+    border-bottom: 1px solid #eee;
+    width: 60%;
+    margin:auto 20%;
 }
 
-.lis li{
-    display: inline-block;
-    list-style-type:none;
-    text-align:left;
-    width: 25%;
-    table-layout:fixed;
-    padding:auto 30px;
-    vertical-align: top;
-}
-.lis{
-    padding: 0%;
-    margin:10px;
-}
-.clearfix{
-    overflow: hidden;
-}
+
+/* game */
+
 .gameimg{
     background:url(../img/gravel.png);
     margin: 10px 60px;
@@ -147,7 +142,9 @@ footer{
     border: solid 2px white;
     border-radius: 2%;
 }
-
+.clearfix{
+    overflow: hidden;
+}
 .fusen{
     background:url(../img/tape-s08.png);
     position: absolute;
@@ -166,6 +163,9 @@ footer{
     display: block;
     position: relative;
     alt:"画像";
+}
+.gameimg li:active{
+    animation: pulse 0.5s;
 }
 
 .gameimg ul{
@@ -190,8 +190,29 @@ footer{
     4px 4px 10px rgba(255, 255, 255, 0.7) inset;
 }
 
-.animated.img:hover{
-    animation:pulse 0.5s;
+/* programming */
+
+.lis li{
+    display: inline-block;
+    list-style-type:none;
+    text-align:center;
+    width: 30%;
+    table-layout:fixed;
+    padding:auto 30px;
+    vertical-align: top;
+}
+.lis li pre{
+    overflow:scroll;
+    margin:auto 10px;
+    text-align:left;
+}
+.lis{
+    padding: 0%;
+    margin:10px;
+}
+.source{
+    font-size: 20px;
+    height: 140px;
 }
 
 /* @media screen and (max-width:600px){
@@ -201,11 +222,27 @@ footer{
     }
 } */
 
+footer{
+    text-align: center;
+    font-size:22px;
+}
 
+.lisfot{
+    padding: 0;
+}
+
+.lisfot li{
+    display: inline-block;
+    list-style-type:none;
+    text-align:center;
+    width: 30%;
+    table-layout:fixed;
+    vertical-align: top;
+}
 
 
 /*@media指定
- all	指定できるメディアのすべて
+all	指定できるメディアのすべて
 aural	音声出力
 braille	点字ディスプレイなどの点字出力
 embossed	点字プリンタ

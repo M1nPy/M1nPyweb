@@ -8,15 +8,24 @@
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     </head>
-    <body>
-            <div class="wrap">
-        <header>
-            <div class="headback">
-                <div class="container">
+    <body id="back">
+            <div id="loading"><span></span></div>
+            <div class="wrap" id="wrap">
+                <header>
+                    <div class="headback">
+                    <div class="headmenu_div">
+                        <ul class="headmenu_ul">
+                            <li class="headmenu"><a href="../M1nPyweb/index.html">portfolio</a></li>
+                            <li class="headmenu"><a href="../M1nPyweb/none.html">none1</a></li>
+                            <li class="headmenu"><a href="">none2</a></li>
+                            <li class="headmenu"><a href="">none3</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
                     <h1>
                         M1nPyみたいなオリーブ丑
                     </h1>
-                    <p>ゲーム（おもにpc）やってるM1nPyです。<br>
+                    <p>ゲーム（おもにpc）やってる<span id="testa">M1nPy</span>です。<br>
                         よくNumpyと間違えられます。
                     </p> 
                 </div>
@@ -55,6 +64,7 @@
                 <p>JavaScriptを使ってみたい、ただそれだけのためにhtml/cssを勉強中。</p>
                 <p>あくまでhtml/cssの練習だからサイト内容は薄い。</p>
                 <p>since 2018/9/30</p>
+                <p>現在時刻:<span id="daynow"></span></p>
             </div>
             <h2 id="game"class="pad">
                 GAME
@@ -63,7 +73,7 @@
             <p class="prof">r6sとかbfとか。osu!&sc;<a href="https://osu.ppy.sh/users/10363375">プロフィール</a>(^ω^)</p>
                 (スライドショーにする予定)
             <div class="gameimg">
-                <ul class="clearfix">
+                <ul class="clearfix" id="imgchange">
                     <li><div class="fusen"></div><img src="img/0_0 (1).jpg" class="animated"></li>
                     <li><div class="fusen"></div><img src="img/0_0 (2).jpg" class="animated"></li>
                     <li><div class="fusen"></div><img src="img/0_0 (3).jpg" class="animated"></li>
@@ -108,7 +118,7 @@ console.log("hello world");
 </pre>
         </li>
 </ul>
-
+<!-- キューとスタック -->
             <h2 id="about"class="pad">
             CONTACT
             </h2>
@@ -135,5 +145,7 @@ console.log("hello world");
             <p>© 2018 M1nPy</p>
         </footer>
     </div>
+</div>
+    <script type="text/javascript" src="scripts/js/main.js"></script>
     </body>
 </html>

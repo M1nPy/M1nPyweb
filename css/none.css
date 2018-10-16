@@ -1,0 +1,32 @@
+body{
+    text-align:center;
+    background-color: gray;
+}
+    /* 
+.mawaru{
+    transition: 1s linear;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color:red; 
+    border:solid 3px black; 
+    line-height: 50px;
+    border-right-color: transparent;
+}
+.mawaru:hover{
+    transform: rotate(360deg);
+} */
+#loading{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border:solid 3px white;
+    width: 80px;
+    height: 80px;
+    bottom:100px;
+    height: 50px;
+    transition: 1s;
+    transform: rotate(180deg);

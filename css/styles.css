@@ -34,32 +34,33 @@ a:hover{
     color:white;
 }
 
-/* header */
-/* headmenu start */
-.headmenu_div{
-    position: absolute;
+/*style-change start */
+.style-change{
     z-index: 1111;
     width: 100%;
     background: rgba(102, 102, 102, 0.8);
+    top:0;
+    height: 21px;
 }
-.headmenu_ul{
+.scul{
     list-style: none;
     margin: 0;
 }
-.headmenu{
+.sclist{
     width: 25%;
     text-align: center;
     float: left;
     font-size:14px;
 }
-.headmenu a{
+.sclist a{
     text-decoration: none;
 }
-.headmenu_div::after{
+.style-change::after{
     clear: both;
 }
+/* style-change end */
 
-/* headmenu end */
+/* header */
 .wrap{
     width: 980px;
     margin:40px auto;

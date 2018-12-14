@@ -4,7 +4,6 @@ var back = document.getElementById("back");
 document.addEventListener("DOMContentLoaded",function(){
     load.style.transitionDuration = "2.5s";
     load.style.transform = "rotate(1000deg)";
-
 },false);
 window.onload = function(){
     load.style.display = "none";

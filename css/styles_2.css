@@ -27,10 +27,35 @@ body{
 }
 
 /* style-change end */
-.menu{
+.head{
+    position: relative;
     width: 100%;
     border-bottom:solid black;
-    font-size: 27px;
     display: block;
     text-align: left;
+    height: 80px;
+}
+.title{
+    vertical-align: bottom;
+    position: absolute;
+    text-align: center;
+    font-size: 60px;
+    height: 100%;
+}
+.menu{
+    position: absolute;
+    top:0;
+    width: 100px;
+    height: 100%;
+    right: 1px;
+}
+.split span{
+    display: block;
+    height: 8px;
+    margin: 13px 0px;
+    background: blue;
+}
+.split{
+    width: 60px;
+    margin:0px 20px
 }

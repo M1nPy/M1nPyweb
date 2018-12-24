@@ -1,5 +1,10 @@
 body{
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #eee;
     margin:0;
+    -webkit-text-size-adjust: 100%;
+    background: url(../img/folk-pattern-black.png);
 }
 /*style-change start */
 .style-change{
@@ -27,35 +32,92 @@ body{
 }
 
 /* style-change end */
+
+header{
+    position: float;
+}
 .head{
     position: relative;
     width: 100%;
-    border-bottom:solid black;
+    border-bottom:1px solid gray;
     display: block;
     text-align: left;
-    height: 80px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.4);
 }
 .title{
-    vertical-align: bottom;
     position: absolute;
     text-align: center;
-    font-size: 60px;
-    height: 100%;
+    right:0px;
+    bottom:4px;
+    left:0px;
+    margin:auto auto;
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
 }
 .menu{
     position: absolute;
     top:0;
-    width: 100px;
+    width: 120px;
     height: 100%;
-    right: 1px;
+    right: 2px;
 }
 .split span{
     display: block;
     height: 8px;
-    margin: 13px 0px;
-    background: blue;
+    margin: 18px 0;
+    background: gray;
 }
 .split{
-    width: 60px;
-    margin:0px 20px
+    width: 80px;
+    margin:0px 20px;
+}
+.item{
+    font-size: 80px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    width:70%;
+    margin:auto;
+    padding-top:40px;
+    height: 100px;
+}
+.subprofile{
+    font-size: 130px;
+    margin:30px 0;
+}
+.subprofile span{
+    display: block;
+    text-align: center;
+}
+.pad{
+    padding-left: 10%;
+}
+.preamble p{
+    text-align:center;
+    font-weight: bolder;
+    font-size:55px;
+    margin:37px 40px;
+    border:5px rgba(40, 141, 57, 0.8) solid;
+    border-radius: 30px/30px;
+    background: rgba(0, 0, 0, 0.4);
+}
+.preamble p span{
+    color: white;
+    margin:20px;
+    display:inherit;
+}
+.name{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.profileimg{
+   text-align: center;
+   margin-top: 30px;
+}
+.prowrap{
+    background-color: rgba(0, 0, 0, 0.3);
 }

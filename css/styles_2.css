@@ -35,6 +35,7 @@ body{
 
 header{
     position: sticky;
+    position: -webkit-sticky;
     top:0;
 }
 .head{
@@ -178,22 +179,25 @@ a:visited{
 }
 .discord{
     margin:90px auto;
-    border-top:1px rgba(255, 255, 255, 0.5) solid;
-    border-bottom:1px rgba(255, 255, 255, 0.5) solid;
+    background-color:rgba(27, 26, 68, 0.5);
+    border-top:1px rgba(0, 0, 0, 0.5) solid;
+    border-bottom:1px rgba(0, 0, 0, 0.5) solid;
 }
 .contact span{
     font-size: 40px;
 }
 .twitter{
     margin:90px auto;
-    border-top:1px rgba(255, 255, 255, 0.5) solid;
-    border-bottom:1px rgba(255, 255, 255, 0.5) solid;
+    background-color:rgba(21, 91, 119, 0.5);
+    border-top:1px rgba(0, 0, 0, 0.5) solid;
+    border-bottom:1px rgba(0, 0, 0, 0.5) solid;
 }
 
 .youtube{
     margin:90px auto;
-    border-top:1px rgba(255, 255, 255, 0.5) solid;
-    border-bottom:1px rgba(255, 255, 255, 0.5) solid;
+    background-color:rgba(122, 17, 17, 0.5);
+    border-top:1px rgba(0, 0, 0, 0.5) solid;
+    border-bottom:1px rgba(0, 0, 0, 0.5) solid;
 }
 
 footer{

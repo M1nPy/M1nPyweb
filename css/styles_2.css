@@ -34,7 +34,8 @@ body{
 /* style-change end */
 
 header{
-    position: float;
+    position: sticky;
+    top:0;
 }
 .head{
     position: relative;
@@ -43,7 +44,7 @@ header{
     display: block;
     text-align: left;
     height: 100px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
 }
 .title{
     position: absolute;
@@ -76,10 +77,10 @@ header{
 .item{
     font-size: 80px;
     text-align: center;
-    border-bottom:1px solid gray;
+    /* border-bottom:1px solid gray; */
     width:70%;
     margin:auto;
-    padding-top:40px;
+    padding-top:120px;
     height: 100px;
 }
 .subprofile{
@@ -98,9 +99,7 @@ header{
     font-weight: bolder;
     font-size:55px;
     margin:37px 40px;
-    border:5px rgba(40, 141, 57, 0.8) solid;
-    border-radius: 30px/30px;
-    background: rgba(0, 0, 0, 0.4);
+    margin-bottom:120px;
 }
 .preamble p span{
     color: white;
@@ -116,8 +115,99 @@ header{
 }
 .profileimg{
    text-align: center;
-   margin-top: 30px;
+   margin-top: 50px;
 }
 .prowrap{
     background-color: rgba(0, 0, 0, 0.3);
+}
+.gametext{
+    text-align: center;
+    font-size:55px;
+}
+.gamegallary{
+    display: block;
+    height: 100%;
+    width: 720px;
+    margin:auto;
+    overflow-x: auto;
+}
+.gamegallary ul{
+    white-space: nowrap;
+    list-style: none;
+    padding: 0;
+}
+.gamegallary ul li{
+    display:inline;
+    margin: 10px;
+}
+.gamegallary ul li img{
+border:7px rgba(255, 255, 255, 0.5) solid;
+border-radius: 20px/20px;
+}
+.gametext h3{
+    margin-top:100px;
+}
+.gametext a{
+    margin :auto;
+    display: block;
+    text-decoration: none;
+    width: 50%;
+    font-size: 50px;
+    padding-right: 40px;
+    padding-bottom: 120px;
+}
+a:visited{
+    color:white;
+}
+.wrapback{
+    background:rgba(255, 255, 255, 0.08);
+    top:30px;
+}
+.programming{
+    text-align: center;
+    font-size: 50px;
+    margin:  120px auto;
+}
+.contact h3{
+    font-size: 70px;
+    font-weight: bolder;
+    margin:0;
+}
+.contact{
+    text-align: center;
+}
+.discord{
+    margin:90px auto;
+    border-top:1px rgba(255, 255, 255, 0.5) solid;
+    border-bottom:1px rgba(255, 255, 255, 0.5) solid;
+}
+.contact span{
+    font-size: 40px;
+}
+.twitter{
+    margin:90px auto;
+    border-top:1px rgba(255, 255, 255, 0.5) solid;
+    border-bottom:1px rgba(255, 255, 255, 0.5) solid;
+}
+
+.youtube{
+    margin:90px auto;
+    border-top:1px rgba(255, 255, 255, 0.5) solid;
+    border-bottom:1px rgba(255, 255, 255, 0.5) solid;
+}
+
+footer{
+    border-top:1px rgba(255, 255, 255, 0.5) solid;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    background-color: black;
+    text-align: center;
+}
+footer p{
+    bottom: 0;
+    margin:0;
+}
+.wrapbacks{
+    padding-bottom:1px;
 }

@@ -7,6 +7,14 @@
         <link rel="icon" href="img/favicon.ico">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+        <script type="text/javascript">
+            var ua = navigator.userAgent.toUpperCase();
+            if(document.referrer.indexOf(location.href.split('/')[2]) == -1 && (ua.indexOf('IPHONE') != -1 || (ua.indexOf('ANDROID') != -1 && ua.indexOf('MOBILE') != -1))) {
+                if(window.confirm('スマートフォンサイトに移動しますか？')) {
+                    location.href = '../M1nPyweb/index_2.html';
+                }
+            }
+        </script>
     </head>
     <body id="back">
 <!-- スタイル切り替え始まり -->
